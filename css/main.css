@@ -240,6 +240,9 @@ header .nav li a:hover{
   header .nav{
     display: none ;
   }
+  header .nav li a:hover{
+  border-bottom : 2px solid var(--main-color);
+  }
 }
 /* end header nav */
 /* end header  */
