@@ -483,8 +483,7 @@ header .nav li a:hover{
 /* start contact  */
 .contact{
   padding-top: var(--main-padding-top);
-  padding-bottom: var(--main-padding-bottom);
-  max-height: 100vh;
+  min-height: 100vh;
 }
 .contact .content{
   display: flex;
@@ -534,12 +533,6 @@ header .nav li a:hover{
     margin-bottom: 30px;
     order: -1;
   }
-  .contact .content .info{
-    order: 1;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-  }
   .contact .content form input[type="submit"]{
     position: relative;
     right: 50%;
@@ -548,6 +541,14 @@ header .nav li a:hover{
 }
 .contact .content .info{
   flex: 30%;
+}
+@media (max-width:767px){
+  .contact .content .info{
+    order: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
 }
 .contact .content .info .box{
   padding: 20px;
@@ -613,6 +614,11 @@ header .nav li a:hover{
   }
   .footer .social-icons a:hover i{
     color: #fff;
+    }
+    @media (max-width: 767px){
+      .footer-title{
+        font-size: .8em;
+      }
     }
     /* start up button  */
     .footer .up-btn{
